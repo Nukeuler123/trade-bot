@@ -39,3 +39,5 @@ Sure! Code it and test it yourself before submitting a PR
 
 ## Found a bug! 
 Make an issue and explain how the bug happened, if you can provide logs and configs with confidential parts redacted
+
+#### Note: This repo was pushed from my local git server so a few of the commits might look a bit weird
