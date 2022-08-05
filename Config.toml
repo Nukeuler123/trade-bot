@@ -17,3 +17,12 @@ strategy = "Single Moving Average" #Strategy (must be its name)
 emergency_limit = 1.0 #If stock detects 1% loss it sells to prevent more loss 
 upper_limit = 2.0 #If the stock detects 2% profit it sells (OPTIONAL)
 intensity = 1 #How many shares to be bought, if program cant buy all shares it will buy as many as it can
+
+##Simply copy the stock over and over again
+[[stocks]]
+symbol = "LMT"
+strategy = "Support and Resist" 
+emergency_limit = 1.0 
+upper_limit = 2.0 
+intensity = 1 
+
