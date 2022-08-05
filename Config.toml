@@ -1,0 +1,19 @@
+#When set to true all stocks will be set into backtesting mode, set to false to prevent this
+testing_mode = true
+
+[keys]
+alpaca_key_id = "KeyIDHere"
+alpaca_key_secret = "SecretHere"
+alpaca_base_url = "https://paper-api.alpaca.markets" #Use https://api.alpaca.markets for live trading
+
+[stock_engine_config]
+backtest_money = 500.0 #How much money to allow in backtesting
+threads = 5 #How many threads should be allocated to the thread pool for processing stock monitors
+
+
+[[stocks]]
+symbol = "AAPL"
+strategy = "Single Moving Average" #Strategy (must be its name)
+emergency_limit = 1.0 #If stock detects 1% loss it sells to prevent more loss 
+upper_limit = 2.0 #If the stock detects 2% profit it sells (OPTIONAL)
+intensity = 1 #How many shares to be bought, if program cant buy all shares it will buy as many as it can
